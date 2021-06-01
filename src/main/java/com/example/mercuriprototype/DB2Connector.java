@@ -18,7 +18,7 @@ public class DB2Connector {
         String url = "jdbc:mysql://localhost:3306/hilflingJDBC";
 //        String url="jdbc:mysql://localhost:3306/hilflingJDBC?autoReconnect=true&useSSL=false&createDatabaseIfNotExist=true";
         String user = "root";
-        String password = "FidoFido112";
+        String password = "i9qAH7AZsUdJA2g0R4AS3";
 
         try {
             con = DriverManager.getConnection(url, user, password);

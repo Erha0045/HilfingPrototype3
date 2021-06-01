@@ -35,7 +35,9 @@ public class ProductController {
     }
 
     @GetMapping("/add")
-    public String add() {
+    public String add(Model model) throws SQLException {
+        products = productMapper.getAll();
+        model.addAttribute("products", products);
         return "add";
     }
 

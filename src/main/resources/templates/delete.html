@@ -2,22 +2,36 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Create</title>
+    <title>delete product</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
 
-delete produkt
 
-    <form action="/delete" method="post" >
-    <input type="number" id="id" name="id" placeholder="vareNummer">
-    <input type="submit" value="Delete">
-</form>
+<div class="container">
+    <div class="row justify-content-center">
+        <h1>delete product</h1>
+    </div>
+    <br>
+    <br>
+    <div class="row justify-content-center" >
+        <form action="/delete" method="post" th:object="${product}" >
+            <div class="form-group">
+                <input type="number" id="id" name="id" placeholder="Id" >
+            </div>
+            <p id="space"></p>
+            <div class="form-group">
+                <input type="submit" value="delete" class="btn btn-success" role="button">
+            </div>
+        </form>
+    </div>
+</div>
+
 
 <div th:if="${not #lists.isEmpty(products)}">
 
-    <table class="table" style="width:100%" align="Center">
+    <table class="table" style="width:80%" align="Center">
 
         <tr id="titles">
             <th>id</th>

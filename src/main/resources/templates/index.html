@@ -8,10 +8,24 @@
 </head>
 <body>
 <div>
-<p><a href="/add">Add</a></p>
-<p><a href="/update">update</a></p>
-<p><a href="/delete">delete</a></p>
+<br>
+    <br>
+    <br>
 </div>
+<div class="container">
+    <div class="row justify-content-center">
+        <h1></h1>
+        <div>
+            <a href="/add" class="btn btn-success btn-lg active" role="button" aria-pressed="true">add</a>
+            <a href="/update" class="btn btn-success btn-lg active" role="button" aria-pressed="true">update</a>
+            <a href="/delete" class="btn btn-success btn-lg active" role="button" aria-pressed="true" >delete</a>
+
+        </div>
+        </form>
+    </div>
+</div>
+
+
 <div th:if="${not #lists.isEmpty(products)}">
 
     <table class="table" style="width:80%" align="Center">

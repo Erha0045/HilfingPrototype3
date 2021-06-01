@@ -8,10 +8,13 @@
 </head>
 <body>
 <div class="container">
-    <div class="row justify-content-center">
-        <h1>CREATE</h1>
+    <div class="row justify-content-center" >
+        <h1>update product</h1>
+
     </div>
-    <div class="row">
+    <br>
+    <br>
+    <div class="row justify-content-center" >
         <form action="/update" method="post" th:object="${product}">
             <div class="form-group">
                 <input type="number" name="id" placeholder="id">
@@ -29,7 +32,7 @@
 
 <div th:if="${not #lists.isEmpty(products)}">
 
-    <table class="table" style="width:100%" align="Center">
+    <table class="table" style="width:80%" align="Center">
 
         <tr id="titles">
             <th>id</th>
